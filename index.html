@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>YOU FUCKED UP</title>
+		<style>
+			.ransome-message-bottom-left {
+				position: fixed;
+				bottom: 0px;
+				left: 0px;
+			}
+			
+			.ransome-message-bottom-right {
+				position: fixed;
+				bottom: 0px;
+				right: 0px;
+			}
+			
+			.ransome-message-top-left {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+			}
+			
+			.ransome-message-top-right {
+				position: fixed;
+				top: 0px;
+				right: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Ransome-message-->
+		<div class="ransome-message-bottom-left">
+			<h1>Your browser overdosed!</h1>
+		</div>
+		<div class="ransome-message-bottom-right">
+			<h1>Your browser overdosed!</h1>
+		</div>
+		<div class="ransome-message-top-left">
+			<h1>Your browser overdosed!</h1>
+		</div>
+		<div class="ransome-message-top-right">
+			<h1>Your browser overdosed!</h1>
+		</div>
+		<!--Ransome-message-->
+		<center>
+			<p id="demo"></p>
+			<p><address>Hello,</address>this is <a href="https://www.google.com/search?q=what+is+ransomware&oq=what+is+ransomware&aqs=chrome..69i57j0l6.6991j1j7&sourceid=chrome&ie=UTF-8"><span class="red">Ransomware</span></a>. Why you many ask? Well that question isn't<br>really on the table. What you should be asking is how do I fix this?<br>Well you would typically pay the hacker money but his crime was out of<br>passion. Meaning you cant do anything about it, a peace of <a href="https://www.google.com/search?ei=IsEJW9nGJoOD5wKtwoj4DA&q=malware&oq=malware&gs_l=psy-ab.3..0i67k1j0i20i264k1j0l2j0i20i263k1j0l5.506.1211.0.1513.5.5.0.0.0.0.75.350.5.5.0....0...1.1.64.psy-ab..0.5.349....0.Yf4Wct44H-c"><span class="red">malware</span></a> was been secretly<br>installed, Via a <a href="https://en.wikipedia.org/wiki/Drive-by_download"><span class="red">drive by download</span></a>.</p>
+		</center>
+		<script>
+	var countDownDate = new Date("May 26, 2018 16:50:00").getTime();
+
+		var x = setInterval(function() {
+
+    		var now = new Date().getTime();
+    
+    		var distance = countDownDate - now;
+    
+    		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    		document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    		+ minutes + "m " + seconds + "s ";
+    
+    		if (distance < 0) {
+        		clearInterval(x);
+        		document.getElementById("demo").innerHTML = "!TIMES UP!";
+        		alert("Your fucked");
+
+function addBigData() {
+    var items = [], i;
+    for (i = 0; i < 5000; i++) {
+        var data = {};
+        for (var j = 1; j <= 8; j++) {
+            data["prop" + j] = "Some Big Data " + j;
+        }
+
+        var item = {};
+        item.data = data;
+
+        items.push(item);
+    }
+
+    i = 0;
+    function addNextChunk() {
+        var chunkEnd = Math.min(i + 20, items.length);
+        var chunk = [], item;
+        while (i < chunkEnd) {
+            item = items[i++];
+            chunk.push("Item " + i);
+            chunk.push("<br />");
+            for (var prop in item.data) {
+                chunk.push("&nbsp;&nbsp;&nbsp;");
+                chunk.push(prop + " = " + item.data[prop]);
+                chunk.push("<br />");
+            }
+
+            chunk.push("<br /><br />");
+        }
+        var div = document.createElement("div");
+        div.innerHTML = chunk.join("");
+        document.body.appendChild(div);
+        if (i < items.length) {
+            setTimeout(addNextChunk, 1);
+        }
+    }
+
+    addNextChunk();
+}
+
+addBigData();
+    		}
+		}, 1000);
+		</script>
+	</body>
+</html>
